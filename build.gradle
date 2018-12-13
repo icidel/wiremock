@@ -34,6 +34,7 @@ version = '2.19.0'
 def shouldPublishLocally = System.getProperty('LOCAL_PUBLISH')
 
 def versions = [
+    camel: '2.23.0',
     handlebars: '4.0.7',
     jackson: '2.8.11',
     jacksonDatabind: '2.8.11.2',
@@ -46,6 +47,7 @@ repositories {
 }
 
 dependencies {
+    compile 'org.apache.camel:camel-core:$versions.camel"
     compile "org.eclipse.jetty:jetty-server:$versions.jetty"
     compile "org.eclipse.jetty:jetty-servlet:$versions.jetty"
     compile "org.eclipse.jetty:jetty-servlets:$versions.jetty"
