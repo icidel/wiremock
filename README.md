@@ -8,7 +8,8 @@ WireMock - a web service test double for all occasions
 Key Features
 ------------
 	
--	HTTP response stubbing, matchable on URL, header and body content patterns
+-	__objective of this fork:__ compatible with many protocols (uses Apache Camel under the hood)
+-	__objective of this fork:__ response stubbing, with extensible matcher plugins for each protocol (URL, header and body content patterns for HTTP)
 -	Request verification
 -	Runs in unit tests, as a standalone process or as a WAR app
 -	Configurable via a fluent Java API, JSON files and JSON over HTTP
